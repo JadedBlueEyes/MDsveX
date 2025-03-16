@@ -7,6 +7,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "rollup -c",
+    "prepack": "rollup -c",
 		"test": "vitest . **/*.spec.ts"
 	},
 	"repository": {

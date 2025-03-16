@@ -6,6 +6,7 @@
 	"module": "dist/main.es.js",
 	"type": "module",
 	"scripts": {
+    "prepack": "node ./build.js",
 		"build": "node ./build.js"
 	},
 	"repository": {
