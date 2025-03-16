@@ -3,8 +3,8 @@ import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import sucrase from '@rollup/plugin-sucrase';
 import dts from 'rollup-plugin-dts';
-import { readFileSync } from 'fs';
-import { resolve } from 'path';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 const pkg = JSON.parse(readFileSync(resolve('package.json'), 'utf-8'));
 

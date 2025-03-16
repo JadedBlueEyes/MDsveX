@@ -23,7 +23,7 @@
 	},
 	"scripts": {
 		"build": "rollup -c",
-    "prepack": "rollup -c",
+		"prepack": "rollup -c",
 		"test": "vitest . **/*.spec.ts"
 	},
 	"files": [
@@ -40,6 +40,10 @@
 	"author": "pngwn <hello@pngwn.io>",
 	"license": "MIT",
 	"devDependencies": {
+		"@rollup/plugin-commonjs": "^28.0.3",
+		"@rollup/plugin-json": "^6.1.0",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@rollup/plugin-sucrase": "^5.0.2",
 		"@starptech/prettyhtml-hast-to-html": "^0.10.0",
 		"@types/acorn": "^4.0.5",
 		"@types/escape-html": "^1.0.0",
@@ -61,10 +65,13 @@
 		"remark-slug": "^6.0.0",
 		"retext": "^7.0.1",
 		"retext-smartypants": "^4.0.0",
+		"rollup": "^4.35.0",
+		"rollup-plugin-dts": "^6.1.1",
 		"rollup-plugin-svelte": "^5.1.1",
 		"shiki": "^0.9.3",
 		"svelte": "^4.0.0",
 		"toml": "^3.0.0",
+		"typescript": "^4.2.4",
 		"unified": "^9.1.0",
 		"vfile": "^4.2.0"
 	},

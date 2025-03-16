@@ -7,7 +7,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "rollup -c",
-    "prepack": "rollup -c",
+		"prepack": "rollup -c",
 		"test": "vitest . **/*.spec.ts"
 	},
 	"repository": {
@@ -24,5 +24,11 @@
 	"license": "MIT",
 	"dependencies": {
 		"svast": "workspace:^0.2.1"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^11.1.6",
+		"rollup": "^4.35.0",
+		"rollup-plugin-dts": "^6.1.1",
+		"typescript": "^4.2.4"
 	}
 }

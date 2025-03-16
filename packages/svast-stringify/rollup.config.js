@@ -1,7 +1,7 @@
 import ts from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
-import { readFileSync } from 'fs';
-import { resolve } from 'path';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 const pkg = JSON.parse(readFileSync(resolve('package.json'), 'utf-8'));
 export default [
@@ -11,7 +11,6 @@ export default [
 		output: [
 			{ file: pkg.module, format: 'es', sourcemap: false },
 			{ file: pkg.main, format: 'cjs', sourcemap: false },
-			,
 		],
 	},
 	{
